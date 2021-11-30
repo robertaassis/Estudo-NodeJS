@@ -1,0 +1,23 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "nodejs, npm, express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertaassis/Estudo-NodeJS.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "RAC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robertaassis/Estudo-NodeJS/issues"
+  },
+  "homepage": "https://github.com/robertaassis/Estudo-NodeJS#readme"
+}
