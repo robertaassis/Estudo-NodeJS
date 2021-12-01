@@ -1,0 +1,1 @@
+Criando arquivo utilizando promise a partir de função; sem utilizar writeFile direto
