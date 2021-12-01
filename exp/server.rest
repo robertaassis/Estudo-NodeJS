@@ -1,0 +1,16 @@
+### get admin; uma requisição por comentario
+GET http://localhost:3000/admin/3
+### acessando via post 
+POST http://localhost:3000/admin
+Content-Type: application/json
+
+{
+    "login":"robertaassis",
+    "senha":"123"
+}
+###
+PATCH http://localhost:3000/admin/1
+###
+PUT http://localhost:3000/admin/2
+###
+DELETE http://localhost:3000/admin/3
