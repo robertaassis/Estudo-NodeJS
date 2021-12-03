@@ -1,0 +1,21 @@
+### acessando via get
+GET http://localhost:3000/subscribers
+### teste para ver se o post está funcionando normal
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "userName": "Jose da silva",
+    "userChannel": "Totvs"
+}
+###
+GET http://localhost:3000/subscribers/61aa4eb28b1524c2cada7359
+###
+DELETE http://localhost:3000/subscribers/61aa504be076266d10b4c65e
+###
+PATCH http://localhost:3000/subscribers/61aa5142150a6fa34b0017ce
+Content-Type: application/json
+
+{
+    "userChannel": "net suprema" // so troca o userChannel
+}
