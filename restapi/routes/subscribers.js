@@ -56,7 +56,7 @@ router.delete('/:id',getSubscriber,async (req,res)=>{ // deletar
     }
 })
 
-async function getSubscriber(req,res,next){ // verifica se o id existe
+async function getSubscriber(req,res,next){ // verifica se o id existe; MIDDLEWARE
     try{
         subscriber1 = await Subscriber.findById(req.params.id)
         if(subscriber==null) return res.status(400).json({message: 'subscriber not found'})
