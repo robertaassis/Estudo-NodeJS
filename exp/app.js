@@ -28,11 +28,11 @@ app.get('/', (req,res) => { // primeira pagina
     res.send('Vai dar certo')
 }) 
 
-app.get('*', (req,res,next) => { // primeira pagina
+app.get('*', (req,res,next) => { 
     setImmediate(()=> {
         next(new Error('Temos um problema!!')) // leva esse erro para a proxima função, que no caso eh 
-    // console.log('Erro gerado') // printa isso no console
-    // res.status(500).json({message: err.message}) 
+    // console.log('Erro gerado') => printa isso no console
+   
     })
 }) 
 

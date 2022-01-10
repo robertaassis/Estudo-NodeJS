@@ -10,6 +10,7 @@ function logReq(req,res,next){
 }
 // Ex: antes de printar Listando os adm, eu quero ir no banco checar se aquele adm existe, logo posso fazer com if, e 
 // caso exista mesmo, darei return next() para puxar o res.send da proxima(next) funcao
+
 router.get('/', logReq, (req,res) => { // primeira pagina; // printa quando alguem entra na pagina principal
     res.send('Listando os adm')
 }) 

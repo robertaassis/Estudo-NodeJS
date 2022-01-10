@@ -29,6 +29,7 @@ const storage = multer.diskStorage({ // informações de armazenamento em disco
 })
 
 const upload = multer({storage})
+console.log(upload)
 
 app.post('/upload',upload.single('arquivo'), (req,res,next)=>{ // href="/upload" do arquivo index.html; upload.single é middleware (interfere na requisicao); permite upload de um unico arquivo
     const file = req.file // pega o arquivo que o usuario colocou

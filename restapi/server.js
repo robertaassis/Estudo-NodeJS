@@ -9,7 +9,7 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 
 const subscribersRouter=require('./routes/subscribers') 
-app.use('/subscribers', subscribersRouter) // toda vez que alguem acessar o /subscribers, o arquivo routes/subscribers que manipula as rotas
+app.use('/subscribers', subscribersRouter) // sempre que alguem acessar o /subscribers, o arquivo routes/subscribers que manipula as rotas
 
 
 mongoose.connect(process.env.DATABASE_STRING)

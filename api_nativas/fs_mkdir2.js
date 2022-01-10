@@ -5,7 +5,7 @@ const fs = require('fs')
 const assets = ['css', 'js', 'images']
 
 function make(assets){
-    assets.forEach((item) =>{
+    assets.forEach((item) =>{ // item é cada valor do vetor
         fs.mkdir(`projeto/assets/${item}`,{recursive:true}, (err, data) =>{ // cria pasta projeto
             if(err) throw err
             console.log(`Diretorio criado com sucesso: ${item}!`)
